@@ -1,0 +1,30 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended" // Thêm plugin React
+  ],
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true // Bật hỗ trợ JSX
+    }
+  },
+  "plugins": [
+    "react" // Thêm plugin React
+  ],
+  "rules": {
+    "semi": ["off"], // Tắt quy tắc yêu cầu dấu ;
+    "react/prop-types": "off" // Tắt kiểm tra prop types (nếu cần)
+  },
+  "settings": {
+    "react": {
+      "version": "detect" // Tự động phát hiện phiên bản React
+    }
+  }
+}
